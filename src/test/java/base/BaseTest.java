@@ -15,18 +15,25 @@ public class BaseTest {
     private WebDriver driver;
     protected HomePage homePage;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp(){
         System.setProperty("webdriver.chrome.driver","/Volumes/TECH/API-development/End-to-End/src/main/utilities/chromedriver");
         driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com");
+       launchUrl();
         driver.manage().window().maximize();
         homePage = new HomePage(driver);
        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 
     }
-    @AfterMethod
+
+    @BeforeMethod
+    public void launchUrl(){
+        driver.get("https://the-internet.herokuapp.com");
+    }
+
+
+    @AfterClass
     public void tearDown() throws InterruptedException {
         driver.quit();
         Thread.sleep(1000);

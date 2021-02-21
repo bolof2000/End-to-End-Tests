@@ -23,7 +23,8 @@ public class DynamicExample1Page {
     public void clickStart(){
         driver.findElement(startElement).click();
         WebDriverWait wait  = new WebDriverWait(driver,5);
-        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(loadingElement)));
+       // wait.until(ExpectedConditions.invisibilityOf(driver.findElement(loadingElement)));
+        wait.until((ExpectedConditions.visibilityOf(driver.findElement(helloWorldElement))));
     }
 
     public String getHelloText(){

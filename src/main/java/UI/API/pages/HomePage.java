@@ -12,6 +12,7 @@ public class HomePage {
     private By alertLink = By.linkText("JavaScript Alerts");
     private By clickUploadLink = By.linkText("File Upload");
     private By dynamicLoadingObject = By.linkText("Dynamic Loading");
+    private By largeDeepDomObject = By.linkText("Large & Deep DOM");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -37,6 +38,11 @@ public class HomePage {
     public DynamicLoadingPage clickDynamicLoadingObject(){
         driver.findElement(dynamicLoadingObject).click();
         return new DynamicLoadingPage(driver);
+    }
+
+    public LargeDeepDomPage clickLargeDeepDomObject(){
+        driver.findElement(largeDeepDomObject).click();
+        return new LargeDeepDomPage(driver);
     }
 
 

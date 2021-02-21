@@ -30,7 +30,7 @@ public class LoginTests extends BaseTest {
     public void testUnSuccessfulLogin() {
         // HomePage homePage = new HomePage(driver);
         loginPage = homePage.clickFormAuthentication();
-       secureAreaPage = loginPage.setLoginCredentials("tomsmithi", "SuperSecretPassword!");
+       secureAreaPage = loginPage.setLoginCredentials("tomsmith1", "SuperSecretPassword!");
 
         String verifyText = loginPage.invalidLogin();
         Assert.assertTrue(verifyText.contains("Your username is invalid"));

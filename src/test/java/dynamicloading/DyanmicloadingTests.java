@@ -17,5 +17,9 @@ public class DyanmicloadingTests extends BaseTest {
        String helloText = dynamicExample1Page.getHelloText();
         Assert.assertEquals(helloText,"Hello World!");
     }
-}
+
+
+
+    }
+
 

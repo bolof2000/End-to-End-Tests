@@ -13,6 +13,7 @@ public class HomePage {
     private By clickUploadLink = By.linkText("File Upload");
     private By dynamicLoadingObject = By.linkText("Dynamic Loading");
     private By largeDeepDomObject = By.linkText("Large & Deep DOM");
+    private By keyPress = By.linkText("Key presses");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -44,6 +45,9 @@ public class HomePage {
         driver.findElement(largeDeepDomObject).click();
         return new LargeDeepDomPage(driver);
     }
+    public KeyPressPage clickKeyPress(){
+        driver.findElement(keyPress).click();
+        return  new KeyPressPage(driver);    }
 
 
 

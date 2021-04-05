@@ -25,6 +25,7 @@ public class DynamicExample1Page {
         WebDriverWait wait  = new WebDriverWait(driver,5);
        // wait.until(ExpectedConditions.invisibilityOf(driver.findElement(loadingElement)));
         wait.until((ExpectedConditions.visibilityOf(driver.findElement(helloWorldElement))));
+        //wait.until((ExpectedConditions.))
     }
 
     public String getHelloText(){

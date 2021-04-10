@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Volumes/TECH/API-development/End-to-End/src/test/java/leetcode_solutions/strings/TestsStringSolutions.java">
+        <classes>
+            <class name="leetcode_solutions.strings.TestsStringSolutions">
+                <methods>
+                    <include name="testminAddToMakeValid"/>
+                    <include name="testreverse"/>
+                    <include name="testisPalindrome"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

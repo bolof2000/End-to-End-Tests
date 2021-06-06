@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="End-to-End" />
+        <module name="End-to-End-Tests" />
       </profile>
     </annotationProcessing>
   </component>

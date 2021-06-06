@@ -1,0 +1,83 @@
+Interfaces that inherit the collection API
+
+Maps: Interface
+   Hashmap     Classes within these interface Map
+   Hashtable
+   TreeMap
+   LinkedlistMap
+
+
+Sets:
+   HashSet
+   LinkedHashSet
+   TreeSet
+
+Lists:
+    ArrayList
+    Vector
+    LinkedlIst
+
+Utilities:
+    Collections
+    Arrays
+
+ Queues:
+    PriorityQueue
+
+
+Wrapper Classes:
+Wrapper classes are those classes which are used to wrap primitive variables in such a way that they behave like an object
+These are classes are:
+Integer - for wrapping int value
+Character for wrapping char value
+Boolean for wrapping boolean value
+Long for wrapping Long value
+Float
+Double
+
+Autoboxing - Coverting the primitive to its wrapper class object
+AutoUnboxing - coverting object to its primitive value
+
+Reflections API:
+Use to get information about your classes, variables, methods names, constructors name .
+to determine which test cases has been executed , creating log file rather than using systems print out
+
+
+MultiThreading and concurrent Programming - to solve parrell execution
+ThreadLocal -
+
+Parallel execution can be done with :
+can be done with testng, xml file, selenium grid - selenium dristribute the code to differnt server
+
+Ways to create Thread :
+By extending Thread Class
+By implementing the runnable interface
+
+Steps:
+Create a class extend Thread class
+Override the run() method in the Thread class
+Create an instance of your thread class
+Then call the start()
+Runnable interface is mostly used
+
+
+Page Object Model with Page factories :
+
+Page Object
+Page Factories
+Generics - Class and Method Level
+MultiThreading - Use of ThreadLocal class
+Reflection
+Data Abstraction
+Polymorphism
+Inheritance
+Typecasting
+Extend reporting
+Maven
+Jenkins
+Github
+Keywords driven
+Excel Reading
+Logs for paralle tests
+Paralle excution - Grid
+Handling waists
